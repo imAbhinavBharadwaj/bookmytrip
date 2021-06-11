@@ -1,13 +1,15 @@
-# include <iostream.h>
-# include <graphics.h>
-# include <process.h>
-# include <string.h>
-# include <stdlib.h>
-# include <stdio.h>
-# include <conio.h>
-# include <time.h>
-# include <dos.h>
-# include <IOMANIP.H>
+#include <iostream>
+#include <process.h>
+#include <graphics.h>
+#include <string.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <cstdio>
+#include <conio.h>
+#include <time.h>
+#include <iomanip>
+#include <random>
+#include <windows.h>
 
 using namespace std;
 
@@ -20,10 +22,10 @@ class customer
   int child_age;
  public:
   void adult_det()
-  { cout<<"\t  Enter the Name of Adult: "; gets_s(adult_name);
+  { cout<<"\t  Enter the Name of Adult: "; gets(adult_name);
     cout<<"\t  Enter the Age of the Adult: "; cin>>adult_age;  }
   void child_det()
-  { cout<<"\t  Enter the Name of Child: "; gets_s(child_name);
+  { cout<<"\t  Enter the Name of Child: "; gets(child_name);
     cout<<"\t  Enter the Age of Child: "; cin>>child_age;     }
   void adult_dis()
   { cout<<"\n\t Name: "<<adult_name<<"\t Age: "<<adult_age; }
@@ -61,7 +63,6 @@ class booking
   char expiry_date[50];
   char card_no[50],cheque_no[15],ccv_no[3];
  public:
-  booking();
   int bus_fare();
   int train_fare();
   int flight_fare();
@@ -322,8 +323,9 @@ void booking::distance()
       travel_distance=1327; }
 }
 void booking::destinations()
-{ clrscr();
-  textcolor(2);
+{ system("cls");
+  /* HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+  SetConsoleTextAttribute(hConsole, FOREGROUND_GREEN); */
   cout<<"\n The following Destination Packages are available:\n ";
   cout<<"\t\t 1.Chennai.\n ";
   cout<<"\t\t 2.New Delhi.\n ";
@@ -347,7 +349,7 @@ void booking::destinations()
     case 7: strcpy(dep_destination,"Hyderabad"); break;
     default: cout<<"\n Your Option is not available in our package!! "; exit(0);
   }
-  cout<<"\n Enter your Depature Date (dd/mm/yyyy): "; gets_s(depature_date);
+  cout<<"\n Enter your Depature Date (dd/mm/yyyy): "; gets(depature_date);
   cout<<"\n Enter your Arrival Destination: "; cin>>arr_dest;
   switch(arr_dest)
   { case 1: strcpy(arr_destination,"Chennai"); break;
@@ -375,7 +377,7 @@ void booking::hotel()
 		 no_of_adults+=1;
 	      else
 		 no_of_child+=1;   }
-	    clrscr();
+	    system("cls");
 	    cout<<"\n\t\t\t\t List of Hotels \n ";
 	    cout<<"\n\t|----------------------------------------------------------------|";
 	    cout<<"\n\t|  S.No.  |     HOTEL NAME     |  ADULT CHARGE  |  CHILD CHARGE  |";
@@ -415,37 +417,38 @@ void booking::hotel()
   }
 }
 void booking::payment()
-{ textcolor(10);
+{ HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+  SetConsoleTextAttribute(hConsole, FOREGROUND_GREEN);
   cout<<"\n Are you sure to proceed for payment?(1-Yes/2-No): "; cin>>des3;
   switch(des3)
-  { case 1:{ clrscr();
+  { case 1:{ system("cls");
 	     cout<<"\n Please wait";
-	     for(int i=0;i<5;++i)
-	     { delay(1000); cout<<". "; }
+	     /*for(int i=0;i<5;++i)
+	     { delay(1000); cout<<". "; }*/
 	     cout<<"\n\n Payment of your fare is inclusive of servicetax & charges!!\n ";
 	     cout<<"\n Please choose your Payment Mode:\n  ";
 	     cout<<"1.Credit Card\n  ";
 	     cout<<"2.Debit Card\n  ";
 	     cout<<"3.Cheque\n\n  "; cin>>payment_mode;
 	     switch(payment_mode)
-	     { case 1: cout<<"\n Enter your Card no.: "; gets_s(card_no);
-		       cout<<"\n Enter your Cards Expiry date(mm/yy): "; gets_s(expiry_date);
-		       cout<<"\n Enter your CCV no. (three digit code seen backside of your card): "; gets_s(ccv_no);
+	     { case 1: cout<<"\n Enter your Card no.: "; gets(card_no);
+		       cout<<"\n Enter your Cards Expiry date(mm/yy): "; gets(expiry_date);
+		       cout<<"\n Enter your CCV no. (three digit code seen backside of your card): "; gets(ccv_no);
 		       cout<<"\n\n Please wait while we are processing your transaction ";
-		       for(int i=0;i<5;++i)
-		       { delay(1000); cout<<". "; }
+		       /*for(int i=0;i<5;++i)
+		       { delay(1000); cout<<". "; }*/
 		       cout<<"\n\n Transaction Succesful!!!\n ";
 		       break;
-	       case 2: cout<<"\n Enter your Card no.: "; gets_s(card_no);
-		       cout<<"\n Enter your Cards Expiry date(mm/yy): "; gets_s(expiry_date);
-		       cout<<"\n Enter your CCV no. (three digit code seen backside of your card): "; gets_s(ccv_no);
+	       case 2: cout<<"\n Enter your Card no.: "; gets(card_no);
+		       cout<<"\n Enter your Cards Expiry date(mm/yy): "; gets(expiry_date);
+		       cout<<"\n Enter your CCV no. (three digit code seen backside of your card): "; gets(ccv_no);
 		       cout<<"\n Please wait while we are processing your transaction ";
-		       for(int j=0;j<5;++j)
-		       { delay(1000); cout<<". "; }
+		       /*for(int j=0;j<5;++j)
+		       { delay(1000); cout<<". "; }*/
 		       cout<<"\n\n Transaction Succesful!!!\n ";
 		       break;
 	       case 3: cout<<"\n Please debit fare amount to this account no.: 111000000045855 \n ";
-		       cout<<"\n Enter your Cheque no: "; gets_s(cheque_no);
+		       cout<<"\n Enter your Cheque no: "; gets(cheque_no);
 		       cout<<"\n Cheque realisation is subjected to working pattern of Banks!!\n ";
 		       break;
 	       default: exit(0);
@@ -457,8 +460,9 @@ void booking::payment()
   }
 }
 void booking::display()
-{ clrscr();
-  textcolor(10);
+{ system("cls");
+  HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+  SetConsoleTextAttribute(hConsole, FOREGROUND_GREEN);
   cout<<"\n Your Booking Details:\n ";
   cout<<"\n Booking Number: "<<booking_no;
   cout<<"\n Booking Date: "<<datebuf;
@@ -504,20 +508,21 @@ void booking::display()
   payment();
 }
 void booking::details()
-{ textcolor(11);
+{ HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+  SetConsoleTextAttribute(hConsole, FOREGROUND_RED);
   cout<<"\n\t Welcome to bookmytrip.com! \t\n ";
-  randomize();
-  booking_no=random(x+100000);
+  std::srand(x);
+  booking_no=rand();
   _strdate(datebuf);
   _strtime(timebuf);
   cout<<"\n Enter your Travel Details:\n";
-  cout<<" Enter your Name: "; gets_s(customer_name);
-  cout<<" Enter you D.O.B. (dd/mm/yy): "; gets_s(customer_dob);
+  cout<<" Enter your Name: "; gets(customer_name);
+  cout<<" Enter you D.O.B. (dd/mm/yy): "; gets(customer_dob);
   cout<<" Enter your Age: "; cin>>customer_age;
-  cout<<" Enter your Gender: "; gets_s(customer_gender);
-  cout<<" Enter your Address: "; gets_s(customer_address);
-  cout<<" Enter your Phone no.: +91"; gets_s(customer_phone);
-  cout<<" Enter your Mail ID: "; gets_s(customer_mailid);
+  cout<<" Enter your Gender: "; gets(customer_gender);
+  cout<<" Enter your Address: "; gets(customer_address);
+  cout<<" Enter your Phone no.: +91"; gets(customer_phone);
+  cout<<" Enter your Mail ID: "; gets(customer_mailid);
   cout<<" Enter No. of Adults: "; cin>>no_of_adults;
   for(int i=0;i<no_of_adults;++i)
     cuss[i].adult_det();
@@ -532,8 +537,9 @@ void booking::details()
     case 2: exit(0);
   }
 }
-void main()
-{ clrscr();
+int main()
+{ system("cls");
   book.details();
   getch();
+  return 0;
 }
