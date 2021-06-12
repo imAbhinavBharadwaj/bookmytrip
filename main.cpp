@@ -9,6 +9,7 @@
 #include <time.h>
 #include <iomanip>
 #include <random>
+#include <unistd.h>
 #include <windows.h>
 
 using namespace std;
@@ -324,8 +325,8 @@ void booking::distance()
 }
 void booking::destinations()
 { system("cls");
-  /* HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-  SetConsoleTextAttribute(hConsole, FOREGROUND_GREEN); */
+  HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+  SetConsoleTextAttribute(hConsole, FOREGROUND_GREEN);
   cout<<"\n The following Destination Packages are available:\n ";
   cout<<"\t\t 1.Chennai.\n ";
   cout<<"\t\t 2.New Delhi.\n ";
@@ -423,8 +424,8 @@ void booking::payment()
   switch(des3)
   { case 1:{ system("cls");
 	     cout<<"\n Please wait";
-	     /*for(int i=0;i<5;++i)
-	     { delay(1000); cout<<". "; }*/
+       for(int i=0;i<5;++i)
+		   { usleep(1000000); cout<<". "; }       
 	     cout<<"\n\n Payment of your fare is inclusive of servicetax & charges!!\n ";
 	     cout<<"\n Please choose your Payment Mode:\n  ";
 	     cout<<"1.Credit Card\n  ";
@@ -434,17 +435,17 @@ void booking::payment()
 	     { case 1: cout<<"\n Enter your Card no.: "; gets(card_no);
 		       cout<<"\n Enter your Cards Expiry date(mm/yy): "; gets(expiry_date);
 		       cout<<"\n Enter your CCV no. (three digit code seen backside of your card): "; gets(ccv_no);
-		       cout<<"\n\n Please wait while we are processing your transaction ";
-		       /*for(int i=0;i<5;++i)
-		       { delay(1000); cout<<". "; }*/
+		       cout<<"\n\n Please wait while we are processing your transaction";
+           for(int i=0;i<5;++i)
+		       { usleep(1000000); cout<<". "; }
 		       cout<<"\n\n Transaction Succesful!!!\n ";
 		       break;
 	       case 2: cout<<"\n Enter your Card no.: "; gets(card_no);
 		       cout<<"\n Enter your Cards Expiry date(mm/yy): "; gets(expiry_date);
 		       cout<<"\n Enter your CCV no. (three digit code seen backside of your card): "; gets(ccv_no);
-		       cout<<"\n Please wait while we are processing your transaction ";
-		       /*for(int j=0;j<5;++j)
-		       { delay(1000); cout<<". "; }*/
+		       cout<<"\n Please wait while we are processing your transaction";
+           for(int i=0;i<5;++i)
+		       { usleep(1000000); cout<<". "; }
 		       cout<<"\n\n Transaction Succesful!!!\n ";
 		       break;
 	       case 3: cout<<"\n Please debit fare amount to this account no.: 111000000045855 \n ";
