@@ -28,9 +28,9 @@ Hence, I had modified the oldmain.cpp to ***main.cpp***, while maintaining most 
 
 As I said earlier, the functions of ***grapichs.h*** Library were depricated, I had to use the modified Library by manualing importing them from various sources.
 
-MingW - GCC for Windows - get it from [here](http://mingw-w64.org/doku.php/start) and read instructions from thier Official source on how to setup for Visual Studio Code.
+**MingW** - ***GCC for Windows - get it from [here](http://mingw-w64.org/doku.php/start) and read instructions from thier Official source on how to setup for Visual Studio Code.***
 
-**WinBGIm** - ***Borland BGI Graphics emulation for the MingW (GCC port) Compiler*** (grabit from [here](http://winbgim.codecutter.org/V6_0/WinBGIm_Library6_0_Nov2005.zip))
+**WinBGIm** - ***Borland BGI Graphics emulation for the MingW (GCC port) Compiler (grabit from [here](http://winbgim.codecutter.org/V6_0/WinBGIm_Library6_0_Nov2005.zip))***
 
 textcolor() function is now implmeneted as :
 
