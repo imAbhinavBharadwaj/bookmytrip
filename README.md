@@ -2,7 +2,7 @@
 
 ***Done during my early days with C++ programming as a High school stud, this was a major project throw me out to push my limits as a programmer!***
 
-# Originally developed Code
+# Originally developed Code (oldmain.cpp)
 
 the Original Code (oldmain.cpp) was developed using Borland C++ on Turbo C++ IDE/Compiler (v3.0.7.7c) which you can get a copy from ***[here](https://github.com/imAbhinavBharadwaj/bookmytrip.cpp/tree/main/cpp.sources)***
 
@@ -34,9 +34,11 @@ As I said earlier, the functions of ***grapichs.h*** Library were depricated, I 
 
 textcolor() function is now implmeneted as :
 
+###### Note : Text color functions use integer values as argument to specify the Color. find Text Color codes from ***[here](https://www.programmingsimplified.com/c/graphics.h/colors)***
+
 Earlier:
 ```c++
-textcolor(0); //find Text Color codes from [here](https://www.programmingsimplified.com/c/graphics.h/colors)
+textcolor(0); 
 ```
 
 Now:
