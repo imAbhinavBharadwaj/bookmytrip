@@ -34,6 +34,12 @@ As I said earlier, the functions of ***grapichs.h*** Library were depricated, I 
 
 textcolor() function is now implmeneted as :
 
+Earlier:
+```c++
+textcolor(0); //find Text Color codes from [here](https://www.programmingsimplified.com/c/graphics.h/colors)
+```
+
+Now:
 ```c++
 HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 SetConsoleTextAttribute(hConsole, FOREGROUND_RED);
@@ -41,6 +47,13 @@ SetConsoleTextAttribute(hConsole, FOREGROUND_RED);
 
 and delay() function is now implemented with use of ***usleep()*** from ***unistd.h*** :
 
+Earlier:
+```c++
+for(int i=0;i<5;++i)
+	{ delay(1000000); cout<<". "; }
+```
+
+Now:
 ```c++
 for(int i=0;i<5;++i)
 	{ usleep(1000000); cout<<". "; }
