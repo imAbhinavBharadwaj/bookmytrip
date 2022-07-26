@@ -1,5 +1,6 @@
 # bookmytrip.java
-Ported Java Code of my C++ project. For more see, imAbhinavBharadwaj/bookmytrip.cpp
+
+Ported Java Code of my C++ project. For more see, [Project Decription](https://github.com/abhinavbharadwajr/bookmytrip/tree/README.md)
 
 ## Dependency Management
 

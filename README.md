@@ -26,10 +26,6 @@ So, I decided to 3 things to do :
 
 2. To re-make this Project in Java and Python - that wat to increase the Code base and Learn them both Totally from Scratch.
 
-3. To make a Web-app of the Same - which unfortunetly I won't be able to, since there is already a Website under the Name ***["BookmyTrip"](https://www.bookmytrip.co/)***
+3. To make a Web-app of the Same - which unfortunetly I won't be able to, since there is already a Website under the Name ***["bookmytrip.co"](https://www.bookmytrip.co/)***
 
-C++ Project     :   Head [here](https://github.com/abhinavbharadwajr/bookmytrip/tree/main/project.cppfol)
-
-Java Project    :   Head [here](https://github.com/abhinavbharadwajr/bookmytrip/tree/main/project.javafol)
-
-Python Project  :   Head [here](https://github.com/abhinavbharadwajr/bookmytrip/tree/main/project.pythfol)
+[C++ Project](https://github.com/abhinavbharadwajr/bookmytrip/tree/main/project.cppfol) | [Java Project](https://github.com/abhinavbharadwajr/bookmytrip/tree/main/project.javafol) | [Python Project](https://github.com/abhinavbharadwajr/bookmytrip/tree/main/project.pythfol)
