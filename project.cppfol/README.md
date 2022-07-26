@@ -41,11 +41,13 @@ for this current Development I'm using Visual Studio Code and I had to install a
 
 **[WinBGIm](https://winbgim.codecutter.org/)** is is a Windows C++ graphics library based on the classic Borland Graphics Interface (originally distributed with Borland’s Turbo Pascal and later with their Turbo C compilers).
 
-> oldmain.cpp requires all the Classic Libraries from Borland Turbo C/C++
+> oldmain.cpp requires all the Classic Libraries from Borland Turbo C/C++. 
 
 to integrate WinBGIm to MingW (GCC Compiler) download the [WinBGIm 6.0 library](http://winbgim.codecutter.org/V6_0/WinBGIm_Library6_0_Nov2005.zip) and : 
 		1. Copy headers winbgim.h, and  graphics.h To your MingW #include directory.
 		2. Copy library libbgi.a to your MingW lib directory.
+
+> You can find the Various implementation of WinBGIm [here](https://home.cs.colorado.edu/~main/bgi/install.html)
 
 > Alternatively you can follow this StackOverFlow [Thread](https://stackoverflow.com/questions/19537564/can-gcc-compile-graphics-h-or-will-graphic-h-only-compile-with-the-borlan-turbo) too.
 
