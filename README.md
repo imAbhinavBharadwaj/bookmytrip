@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # BookmyTrip - Travel Ticketing System
-=======
-# BookmyTrip - Ticketing System
->>>>>>> 7897d0d9b73cf5e245d1e5374ef012835989c81d
 
 ***a Basic program developed to demonstrate Ticket Booking systems, developed during my early days with C++ programming as a High school stud, this was a major project throw me out to push my limits as a programmer!***
 
