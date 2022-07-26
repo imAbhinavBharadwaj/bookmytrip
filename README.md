@@ -1,6 +1,6 @@
 # BookmyTrip - Travel Ticketing System
 
-***a Basic program developed to demonstrate Ticket Booking systems, developed during my early days with C++ programming as a High school stud, this was a major project throw me out to push my limits as a programmer!***
+***a Basic program developed to demonstrate Travel Ticket Booking system. Developed during my early days with C++ programming as a High school stud, this was a major break-through project pushing upto my limits as a programmer!***
 
 ## Initial Work (October '14 - March '15)
 
@@ -28,4 +28,28 @@ So, I decided to 3 things to do :
 
 3. To make a Web-app of the Same - which unfortunetly I won't be able to, since there is already a Website under the Name ***["bookmytrip.co"](https://www.bookmytrip.co/)***
 
-[C++ Project](https://github.com/abhinavbharadwajr/bookmytrip/tree/main/project.cppfol) | [Java Project](https://github.com/abhinavbharadwajr/bookmytrip/tree/main/project.javafol) | [Python Project](https://github.com/abhinavbharadwajr/bookmytrip/tree/main/project.pythfol)
+## Project Source
+
+<details> <summary> C++ Project </summary>
+<p>
+
+[About this Implmentation](https://github.com/abhinavbharadwajr/bookmytrip/tree/main/project.cppfol/README.md) | [cppRepo](https://github.com/abhinavbharadwajr/bookmytrip/tree/main/project.cppfol)
+
+</p>
+</details>
+
+<details> <summary> Java Project </summary>
+<p>
+
+[About this Implmentation](https://github.com/abhinavbharadwajr/bookmytrip/tree/main/project.javafol/README.md) | [javaRepo](https://github.com/abhinavbharadwajr/bookmytrip/tree/main/project.javafol)
+
+</p>
+</details>
+
+<details> <summary> Python Project </summary>
+<p>
+
+[About this Implmentation](https://github.com/abhinavbharadwajr/bookmytrip/tree/main/project.pythfol/README.md) | [pythonRepo](https://github.com/abhinavbharadwajr/bookmytrip/tree/main/project.pythfol)
+
+</p>
+</details>

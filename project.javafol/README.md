@@ -1,6 +1,8 @@
-# bookmytrip.java
+# BookmyTrip - Java Version
 
-Ported Java Code of my C++ project. For more see, [Project Decription](https://github.com/abhinavbharadwajr/bookmytrip/tree/README.md)
+***Still under Development - a Lot of this has to be done from Scratch.***
+
+Java implementaion of the Project. For more see, [Project Decription](https://github.com/abhinavbharadwajr/bookmytrip/tree/README.md)
 
 ## Dependency Management
 

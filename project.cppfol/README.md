@@ -6,15 +6,35 @@ the Original Code (Initial Development) [oldmain.cpp](https://github.com/abhinav
 
 or you can make use of a later version of same [Turbo C++ IDE v3.2](https://github.com/vineetchoudhary/turbocpp/releases/download/v3.2/Turbo.C.3.2.zip?raw=true&after=https://developerinsider.co/c-and-cpp-insider/) with added functionalites.
 
-oldmain.cpp had the ***grapichs.h*** header file from Borlan C++ Library which was used to make the console Inout Application more interactive and more popped-up in color.
+oldmain.cpp had built-in functions from Borlan C++ Libraries like ***<grapichs.h>, <dos.h> and <conio.h>***, which were used to make the Application's I/O more interactive and more popped-up in color.
 
-functions like :
+<details> <summary> delay() </summary>
+<p>
 
-***delay()*** - to make the cout (or in other words output) load in delay timer passed at argument for this function
+defined in the '<dos.h>' library, delay() is used to make the output load with a 'defined-delay' timer. the Amount of Delay is defined in 'milliseconds' as argument of the function.
 
-***textcolor()*** -  used to change the Text color of console Input screen, making a bit colorful
+```c++
+void delay (unsigned int milliseconds)
+```
 
-***clrscr() and getch()*** - functions defined in ***conio.h*** to clear the screen and hold the screen from exiting after execution gets over
+</p>
+</details>
+
+<details> <summary> textcolor() </summary>
+<p>
+
+defined in '<graphics.h>' library - used to change the Text color of console Input screen, making a bit colorful
+
+</p>
+</details>
+
+<details> <summary> clrscr() and getch() </summary>
+<p>
+
+these functions are part of '<conio.h>' - used to clear the screen and hold the screen from exiting after execution gets over.
+
+</p>
+</details>
 
 ## Post Project-Period Development (2021 - Present)
 
@@ -86,8 +106,8 @@ for(int i=0;i<5;++i)
 	{ usleep(1000000); cout<<". "; }
 ```
 	
-# the Other Version
+# Advance Implementations
 
-In addition to this, implementation of this project in Java (fully) in underway and I will be link it, once Done.
+In addition to this, implementation of this project in Java and Python are underway and I will be link it, once Done.
 
 > Early Previews of Java Code is available ***[here](https://github.com/abhinavbharadwajr/bookmytrip/tree/main/project.javafol)***
