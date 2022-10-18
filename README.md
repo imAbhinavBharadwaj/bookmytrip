@@ -12,7 +12,7 @@ Optional Menu - where Customer is Offered to Book Hotel Accomodation that are ne
 
 Intially developed version lacked to feature to Cancel to Bookings Made and the Fares were Fixed (not dynamic)
 
-this Project was an effort with my Dear Friend - [Ganesh D. Dolia](https://www.instagram.com/ganeshdolia/)
+this Project was an effort with my Dear Friend - [Ganesh D Dolia]([https://www.instagram.com/ganeshdolia/](https://www.linkedin.com/in/ganeshdolia/))
 
 ## Post Project-Period Development (2021 - Present)
 
